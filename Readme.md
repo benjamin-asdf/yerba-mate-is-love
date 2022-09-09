@@ -8,11 +8,8 @@ https://drive.google.com/file/d/1HCIoAEXiq5-hLoO4ap0hXSdcv8oqVzM1/view?usp=shari
 
 # Hacking
 
-For scripting with clojure:
-https://github.com/babashka/babashka
-
-For producing html, I use:
-https://github.com/weavejester/hiccup
+Sripting with clojure: https://github.com/babashka/babashka
+Html: https://github.com/weavejester/hiccup
 
 If you know how html works, the markup just maps 1:1.
 With the benefit that you have clojure data structures.
