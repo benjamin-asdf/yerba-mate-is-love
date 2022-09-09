@@ -1,5 +1,5 @@
 Just a toy website.
-Up on https://SingularityGroup.github.io/yerba-mate-is-love
+Up on https://benjamin-asdf.github.io/yerba-mate-is-love
 This is one of the variations of me tyring to make the simplest website possible.
 
 I made a video of me making this website, including creating the repo and fumbling around.

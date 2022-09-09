@@ -1,9 +1,8 @@
 {:paths ["src" "resources"]
  :tasks
- ;; "git@github.com:SingularityGroup/yerba-mate-is-love.git"
  {:init (def
           url
-          "https://SingularityGroup.github.io/yerba-mate-is-love")
+          "https://benjamin-asdf.github.io/yerba-mate-is-love")
   setup-once
   (when-not (babashka.fs/exists? "public")
     (do
@@ -22,7 +21,7 @@
                  "git"
                  "push"
                  "--force"
-                 "git@github.com:SingularityGroup/yerba-mate-is-love.git"
+                 "git@github.com:benjamin-asdf/yerba-mate-is-love.git"
                  "master:gh-pages")}
   build-deploy {:depends [build deploy]}
   browse-qr-code (shell
