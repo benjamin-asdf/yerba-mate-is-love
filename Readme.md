@@ -9,13 +9,13 @@ https://drive.google.com/file/d/1HCIoAEXiq5-hLoO4ap0hXSdcv8oqVzM1/view?usp=shari
 # Hacking
 
 Sripting with clojure: https://github.com/babashka/babashka
+
 Html: https://github.com/weavejester/hiccup
 
 If you know how html works, the markup just maps 1:1.
+
 With the benefit that you have clojure data structures.
 
 # Awknoledgements
 
-Inspired by
-https://github.com/borkdude/quickblog
-Thanks, Mr. Bork
+Inspired by https://github.com/borkdude/quickblog Thanks, Mr. Bork

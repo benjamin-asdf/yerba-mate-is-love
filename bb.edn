@@ -6,7 +6,7 @@
   setup-once
   (when-not (babashka.fs/exists? "public")
     (do
-      (shell
+     (shell
        "mkdir -p public")
       (shell
        "git init public")))
