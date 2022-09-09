@@ -1,18 +1,6 @@
-{:deps {}
- :paths ["src" "resources"]
+{:paths ["src" "resources"]
  :tasks
- ;; serve
- {}
- ;; build
-
- }
-
-
-{:tasks
-
-          ;; "git@github.com:SingularityGroup/yerba-mate-is-love.git"
-
-
+ ;; "git@github.com:SingularityGroup/yerba-mate-is-love.git"
  {:init (def
           url
           "https://SingularityGroup.github.io/yerba-mate-is-love")
@@ -23,9 +11,7 @@
        "mkdir -p public")
       (shell
        "git init public")))
-  build (shell "emacs" "-Q" "--script" "build-site.el" )
-  serve-local {:depends [build]
-               :task (shell "emacsclient" "--eval" "(load-file \"./serve.el\")")}
+  build (require '[pages.index])
   deploy-add {:depends [setup-once] :task (shell {:dir "public"} "git" "add" "--" ".")}
   deploy-commit (shell
                  {:dir "public"}
@@ -36,7 +22,7 @@
                  "git"
                  "push"
                  "--force"
-                 "git@github.com:benjamin-asdf/faster-than-light-memes.git"
+                 "git@github.com:SingularityGroup/yerba-mate-is-love.git"
                  "master:gh-pages")}
   build-deploy {:depends [build deploy]}
   browse-qr-code (shell
