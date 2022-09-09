@@ -13,8 +13,10 @@
     [:h2 "Prepare"]
     [:div "Put some herb into the gourd."]
     [:div
-     "Shake and move the herb to one side. Awaken the herb with cold water.
+     "Shake and move the herb to one side.
+ Awake the herb with cold water.
  Be patient and do not stir the mate."]
     [:div
-     {:style {"font-weight" "bold" "color" "OrangeRed"}}
-     "Really, do not stir it"]])))
+     {:style
+      {"font-weight" "bold" "color" "OrangeRed" "font-size" "2em"}}
+     "Really, never stir it"]])))
