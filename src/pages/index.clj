@@ -12,9 +12,9 @@
     [:h1 "Yerba mate is love"]
     [:h2 "Prepare"]
     [:div "Put some herb into the gourd."]
-    [:div "Shake and move the herb to one side."]
-    [:div "Awaken the herb with cold water."]
-    [:div "Be patient and do not stir the mate."]
+    [:div
+     "Shake and move the herb to one side. Awaken the herb with cold water.
+ Be patient and do not stir the mate."]
     [:div
      {:style {"font-weight" "bold" "color" "OrangeRed"}}
      "Really, do not stir it"]])))
