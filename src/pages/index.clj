@@ -9,11 +9,11 @@
   (slurp (io/resource "base.html"))
   (h/html
    [:div
-    [:h1 "yerba mate is love"]
+    [:h1 "Yerba mate is love"]
     [:h2 "Prepare"]
     [:div "Put some herb into the gourd."]
-    [:div "Shake and move the mate to one side."]
-    [:div "Awaken the mate with cold water."]
+    [:div "Shake and move the herb to one side."]
+    [:div "Awaken the herb with cold water."]
     [:div "Be patient and do not stir the mate."]
     [:div
      {:style {"font-weight" "bold" "color" "OrangeRed"}}
