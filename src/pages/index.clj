@@ -19,4 +19,4 @@
     [:div
      {:style
       {"font-weight" "bold" "color" "OrangeRed" "font-size" "2em"}}
-     "Really, never stir it"]])))
+     "Really, never stir it, for real!"]])))
