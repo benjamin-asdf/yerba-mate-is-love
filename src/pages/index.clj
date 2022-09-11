@@ -12,12 +12,12 @@
     [:h1 "Yerba mate is love"
      {:style {"align" "center"}}]
     [:div.slideshow-container
-    [:div.mySlides.fade
-     [:img
-      {:style "width:100%", :src "https://i.imgur.com/4HTThIp.jpeg"}]]
-    [:div.mySlides.fade
-     [:img
-      {:style "width:100%", :src "https://i.imgur.com/3TDlK1R.jpeg"}]]
+     [:div.mySlides.fade
+      [:img
+       {:style "width:100%", :src "https://i.imgur.com/4HTThIp.jpeg"}]]
+     [:div.mySlides.fade
+      [:img
+       {:style "width:100%", :src "https://i.imgur.com/3TDlK1R.jpeg"}]]
     [:a.prev {:onclick "plusSlides(-1)"} "❮"]
     [:a.next {:onclick "plusSlides(1)"} "❯"]]
    [:br]
@@ -38,4 +38,4 @@
      "Really, never stir it, for real!"]
     [:img
      {:src
-      "https://i.imgur.com/0z7vdvs.png"}]])))
+      "https://i.imgur.com/0z7vdvs.png"}])))

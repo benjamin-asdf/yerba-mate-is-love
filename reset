@@ -1,0 +1,47 @@
+[33mcommit 1fdc1fd1084ea0a0c4771bc7f352f9f13c048b39[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Bababoey <jacobvucic@gmail.com>
+Date:   Sun Sep 11 19:17:13 2022 +0200
+
+    ye
+
+[1mdiff --git a/src/pages/index.clj b/src/pages/index.clj[m
+[1mindex 3a11c4c..286a2a6 100644[m
+[1m--- a/src/pages/index.clj[m
+[1m+++ b/src/pages/index.clj[m
+[36m@@ -9,7 +9,22 @@[m
+   (slurp (io/resource "base.html"))[m
+   (h/html[m
+    [:div[m
+[31m-    [:h1 "Yerba mate is love"][m
+[32m+[m[32m    [:h1 "Yerba mate is love"[m
+[32m+[m[32m     {:style {"align" "center"}}][m
+[32m+[m[32m    [:div.slideshow-container[m
+[32m+[m[32m    [:div.mySlides.fade[m
+[32m+[m[32m     [:img[m
+[32m+[m[32m      {:style "width:100%", :src "https://i.imgur.com/4HTThIp.jpeg"}]][m
+[32m+[m[32m    [:div.mySlides.fade[m
+[32m+[m[32m     [:img[m
+[32m+[m[32m      {:style "width:100%", :src "https://i.imgur.com/3TDlK1R.jpeg"}]][m
+[32m+[m[32m    [:a.prev {:onclick "plusSlides(-1)"} "❮"][m
+[32m+[m[32m    [:a.next {:onclick "plusSlides(1)"} "❯"]][m
+[32m+[m[32m   [:br][m
+[32m+[m[32m   [:div[m
+[32m+[m[32m    {:style "text-align:center"}[m
+[32m+[m[32m    [:span.dot {:onclick "currentSlide(1)"}][m
+[32m+[m[32m    [:span.dot {:onclick "currentSlide(2)"}]]][m
+     (into [:div] (repeat 10 [:div "trollolol "]))[m
+     [:h2 "Prepare"][m
+     [:div "Put some herb into the gourd."][m
+[36m@@ -20,11 +35,7 @@[m
+     [:div[m
+      {:style[m
+       {"font-weight" "bold" "color" "OrangeRed" "font-size" "2em"}}[m
+[31m-<<<<<<< HEAD[m
+[31m-     "Really, never stir it, for real!"]])))[m
+[31m-=======[m
+[31m-     "Really, never stir it"][m
+[32m+[m[32m     "Really, never stir it, for real!"][m
+     [:img[m
+      {:src[m
+       "https://i.imgur.com/0z7vdvs.png"}]])))[m
+[31m->>>>>>> e5c7a4daf61bd4de9cd6548da274f87746922661[m
