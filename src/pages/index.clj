@@ -9,7 +9,22 @@
   (slurp (io/resource "base.html"))
   (h/html
    [:div
-    [:h1 "Yerba mate is love"]
+    [:h1 "Yerba mate is love"
+     {:style {"align" "center"}}]
+    [:div.slideshow-container
+    [:div.mySlides.fade
+     [:img
+      {:style "width:100%", :src "https://i.imgur.com/4HTThIp.jpeg"}]]
+    [:div.mySlides.fade
+     [:img
+      {:style "width:100%", :src "https://i.imgur.com/3TDlK1R.jpeg"}]]
+    [:a.prev {:onclick "plusSlides(-1)"} "❮"]
+    [:a.next {:onclick "plusSlides(1)"} "❯"]]
+   [:br]
+   [:div
+    {:style "text-align:center"}
+    [:span.dot {:onclick "currentSlide(1)"}]
+    [:span.dot {:onclick "currentSlide(2)"}]]]
     (into [:div] (repeat 10 [:div "trollolol "]))
     [:h2 "Prepare"]
     [:div "Put some herb into the gourd."]
@@ -20,11 +35,7 @@
     [:div
      {:style
       {"font-weight" "bold" "color" "OrangeRed" "font-size" "2em"}}
-<<<<<<< HEAD
-     "Really, never stir it, for real!"]])))
-=======
-     "Really, never stir it"]
+     "Really, never stir it, for real!"]
     [:img
      {:src
       "https://i.imgur.com/0z7vdvs.png"}]])))
->>>>>>> e5c7a4daf61bd4de9cd6548da274f87746922661
