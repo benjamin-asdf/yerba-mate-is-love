@@ -6,7 +6,7 @@
   setup-once
   (when-not (babashka.fs/exists? "public")
     (do
-     (shell
+      (shell
        "mkdir -p public")
       (shell
        "git init public")))
@@ -27,4 +27,5 @@
   browse-qr-code (shell
                   "xdg-open"
                   (str "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" url))
-  browse (shell "xdg-open" url)}}
+  browse (shell "xdg-open" url)
+  browse-local (shell "xdg-open" "./public/index.html")}}
