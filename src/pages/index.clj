@@ -10,6 +10,7 @@
   (h/html
    [:div
     [:h1 "Yerba mate is love"]
+    (into [:div] (repeat 10 [:div "trollolol "]))
     [:h2 "Prepare"]
     [:div "Put some herb into the gourd."]
     [:div
@@ -19,4 +20,7 @@
     [:div
      {:style
       {"font-weight" "bold" "color" "OrangeRed" "font-size" "2em"}}
-     "Really, never stir it"]])))
+     "Really, never stir it"]
+    [:img
+     {:src
+      "https://i.imgur.com/0z7vdvs.png"}]])))
